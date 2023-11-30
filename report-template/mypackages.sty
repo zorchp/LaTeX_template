@@ -1,0 +1,54 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{mypackages}
+
+%\mode<presentation>
+
+%字体与编码
+\usepackage{fontspec, xunicode, xltxtra}
+\usepackage{xeCJK}
+\usepackage{lmodern}
+%导入数学符号与字体
+\usepackage{amsmath}
+
+%设置超链接
+\usepackage[colorlinks,linkcolor=blue]{hyperref}
+
+
+\usepackage{booktabs}
+\xeCJKsetup{AutoFakeBold=1.5}%全局设定当没有声明对应的粗体时，是否使用伪粗体；当输入的是数字时，将使用伪粗体，并将使用输入的数字作为伪粗体的默认粗细程度。
+
+%插入图、子图、浮动体
+\usepackage{graphicx, float, subfigure}
+
+\usepackage{multirow}
+\newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}%定义表格宽度
+
+ \usepackage{indentfirst} 
+ \setlength{\parindent}{2em}
+
+%\usepackage{animate}%插入gif动画
+
+%\usepackage[fleqn]{amsmath}%公式环境，左对齐
+
+%\hypersetup{pdfpagemode=FullScreen}%打开时自动全屏显示
+%\usepackage[timeinterval=1]{tdclock}
+
+\usepackage{booktabs}%画三线表
+\usepackage{array}%调整表格宽度
+
+\usepackage{setspace}%设置行距环境：\begin{spacing}{1.5}...\end{spacing}
+
+\usepackage{titlesec} % 控制标题的宏包
+\usepackage{titletoc} % 控制目录的宏包
+\usepackage[a4paper,text={150true mm,233.6true mm},top=30.5true mm,left=31.7true mm,head=2.5true mm,headsep=7.5true mm,foot=8.5true mm]{geometry}
+% 支持版面尺寸设置
+\usepackage{lipsum}
+\usepackage{zhlipsum}
+%\usepackage{bm}
+
+%字体设置
+\input{zhfont}
+
+\renewcommand{\baselinestretch}{1.25}%设置基础行距放大比例
+%\setlength{\baselineskip}{10pt}%设置基础行距
+\renewcommand{\today}{\number\year 年 \number\month 月 \number\day 日} %中文日期

@@ -1,0 +1,238 @@
+\documentclass{ctexbeamer}
+\usetheme[navigation]{UMONS}
+\usepackage[]{inputenc}
+\usepackage[english]{babel}
+\usepackage{tikz}
+\usetikzlibrary{fadings}
+
+
+\title[美赛经验分享]{美赛经验分享}
+\author[X]{X}
+\institute[DLUT]{%
+	大连理工大学
+}
+\date{2022年1月3日}
+
+\AtBeginSection[]
+{
+	\begin{frame}<beamer>
+		\frametitle{\textbf{目录}}
+		\tableofcontents[currentsection]
+
+	\end{frame}
+}
+
+\begin{document}
+\maketitle
+
+\begin{frame}
+	\frametitle{\textbf{目录}}
+	\tableofcontents
+\end{frame}
+
+
+\section{比赛前的准备} % (fold)
+\label{sec:比赛准备}
+
+\subsubsection{关于组队} % (fold)
+\label{ssub:关于组队}
+
+% subsubsection 关于组队 (end)
+\begin{frame}{关于组队}
+	\begin{itemize}
+		\item 可采取2+1模式
+		      \begin{enumerate}
+			      \item 建模人
+
+			            \parbox[t]{.75\textwidth}{数学功底扎实, 无论是对实际问题还是数学理论都有着比较敏捷的思维能力. 会表述数学建模过程、阐述问题, 了解美赛论文的基本框架结构. 如果会点编程更好. }
+			            \vspace*{7pt}
+
+			      \item 编程人
+
+			            \parbox[t]{.75\textwidth}{掌握MATLAB,Python等建模软件/语言, 会数据处理和算法的代码实现. }
+			            \vspace*{7pt}
+
+			      \item 写作人(英文较好)
+
+			            \parbox[t]{.75\textwidth}{时刻从评委角度考虑, 在全文中形成一个完整的逻辑框架; 分辨出模型中主要和次要部分; 做好排版的工作; 写作人的水平直接决定了获奖的高低. }
+		      \end{enumerate}
+		      \vspace{5pt}
+		\item \parbox[t]{.85\textwidth}{三个人至少都能够擅长一方面的工作, 可以来自不同专业, 拓宽知识面. 相互之间也有交叉, 达到团队协作的效果. }
+	\end{itemize}
+\end{frame}
+
+
+\subsubsection{相关参考} % (fold)
+\label{ssub:相关参考}
+
+% subsubsection 相关参考 (end)
+\begin{frame}{参考书籍}
+	\begin{enumerate}
+		\item  高等数学+线性代数+概率论与数理统计+计量经济学
+
+		\item  统计学、常微分方程等
+
+		\item 《数学模型》姜启源,谢金星,叶俊~高等教育出版社
+
+		\item 《数学建模算法与应用》司守奎~国防工业出版社
+
+		\item 其他书籍（电子/纸质）: MATLAB教程、美赛赛题解析与研究
+
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}{相关软件}
+	\begin{enumerate}
+		\item 论文写作: Word(with MathType), \LaTeX(不建议新手使用, 想试试的话我这有模板)
+
+		\item 数据分析与计算: Python, MATLAB, Excel(数据多以Excel格式给出),
+		      SPSS, Lingo, R, Origin
+
+		\item 流程图绘制: Visio, PPT, XMind, processon(在线网站)
+
+		\item 科学上网(用于查找论文, 下载数据及代码): \textbf{谷歌学术助手}插件
+
+		      (或者用镜像网站替代)
+
+		\item 翻译软件(翻译赛题,论文): 搜狗翻译, Google翻译
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}{常用数据库}
+	\begin{enumerate}
+		\item 美国政府公开数据：https://www.data.gov/
+		\item 美国农业部数据集：https://www.usda.gov/topics/data
+		\item 财经数据(东方财富)：https://www.eastmoney.com/
+		\item 国家统计局:  http://data.stats.gov.cn/
+		\item 人大经济论坛: http://bbs.pinggu.org/
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}{其他资料-网址}
+	\begin{exampleblock}{历年美赛特等奖(O奖)论文}
+		https://gitcode.net/mirrors/dick20/mcm-icm
+	\end{exampleblock}
+
+	\begin{exampleblock}{数学建模算法与应用(PDF, 随书代码见出版社网站)}
+		https://www.aliyundrive.com/s/o4pjQBMZGW3
+	\end{exampleblock}
+
+	\begin{exampleblock}{建模获奖经验贴}
+		https://blog.csdn.net/qq\_35759272/article/details/109179105
+	\end{exampleblock}
+\end{frame}
+
+
+
+\subsubsection{赛前练习} % (fold)
+\label{ssub:赛前练习}
+
+% subsubsection 赛前练习 (end)
+\begin{frame}{赛前练习}
+	\begin{itemize}
+		\item 独立思考, 一起讨论往年赛题中用到的主要模型与算法.
+		\item 多读往年优秀论文(学会优秀论文摘要页的写法), 学习论文的结构与建模思路.
+		\item 写论文的同学要学习一下Word排版的一些技巧, 快速输入公式, 流程图绘制(XMind,Visio)等.
+		\item 编程的同学可以跟着书上代码熟悉一下命令的调用(方便比赛时候Ctrl CV).
+	\end{itemize}
+\end{frame}
+
+% section 比赛准备 (end)
+
+
+\section{开始比赛+论文写作} % (fold)
+\label{sec:论文写作}
+
+\subsubsection{赛题选择} % (fold)
+\label{ssub:赛题选择}
+
+% subsubsection 赛题选择 (end)
+\begin{frame}{赛题选择}
+	\begin{itemize}
+		\item MCM: 3题(A,B,C)  偏向理工科、专业性较强, 有难度
+		      \vspace{5pt}
+		\item ICM: 3题(D,E,F)  交叉学科、适合经济类专业, 相对简单
+
+	\end{itemize}
+\end{frame}
+
+\subsubsection{论文思路} % (fold)
+\label{ssub:论文思路}
+
+% subsubsection 论文思路 (end)
+\begin{frame}{论文思路}
+	\begin{enumerate}
+		\item 美赛题目的中文翻译版, 找题目中的关键信息.
+		\item 搜索题目相关领域的论文, 寻找解答思路
+		      \begin{itemize}
+			      \item 中文: 知网、万方、维普
+			      \item 英文: 谷歌学术、web of science
+			      \item \alert{注意}: 通过阅读摘要快速理解论文所用方法, 以节省时间.
+		      \end{itemize}
+		\item 可以提交未完成的论文, MCM/ICM评委更看重\textbf{问题解决方法}.
+	\end{enumerate}
+
+\end{frame}
+
+\subsubsection{论文书写} % (fold)
+\label{ssub:论文书写}
+
+% subsubsection 论文书写 (end)
+\begin{frame}{论文书写:\alert{摘要页(Summary Sheet)}}
+	摘要页是评审中较为重要的一部分, 与评审分数息息相关. 获奖论文的摘要往往在质量上超越其他论文的摘要.
+
+	\vspace{7pt}
+	摘要页需要清楚、简明扼要地描述\alert{怎么分析问题、用什么方法、得到什么结果}, 而不应只是问题的重述、剪切或者粘贴引用内容.
+
+	\vspace{7pt}
+	摘要页需要反复修改(字斟句酌).
+\end{frame}
+
+\begin{frame}{论文书写: 框架结构}
+	\begin{enumerate}
+		\item Summary(摘要): 简洁明了, 展现解题思路方法, 有效利用首页空间
+		\item Introduction(问题重述): 对赛题的解读, 对现有研究成果的综述与评论以及对解题思路和主要方法的简要介绍
+		\item Assumption(问题假设): 一一列举, 尤其是需要明确的隐含假设, 解释假设的合理性, 并清楚地列出模型中使用的所有变量.
+		\item Basic Model(基本模型)
+		\item Improved Model(模型改进)
+		\item Strengths and Weaknesses(模型优缺点)
+		\item Robustness Analysis(稳定性分析): 包括误差分析.
+		\item Sensitivity Analysis(敏感性分析): 微小扰动对模型的影响情况.
+		\item Conclusion(结论): 结论应在最后一节的开头阐明.
+	\end{enumerate}
+
+\end{frame}
+
+\begin{frame}{优秀论文的几个特点}
+
+	\begin{enumerate}
+		\item 必须有结果, 实在不行可以利用更多的假设来简化模型, 以得到初步的结果.
+		\item 插图要丰富且精美, 好的论文一定会有阐述论文思路的流程图.
+		\item 进行模型间的对比分析, 证明自己模型的先进性, 告诉别人你的模型最好!
+	\end{enumerate}
+\end{frame}
+
+
+
+\section{其他建议} % (fold)
+\label{sec:其他建议}
+\begin{frame}{其他建议}
+	\begin{enumerate}
+		\item \alert{善用搜索引擎}, 算法代码在网上都有现成(CSDN, GitHub, Gitee等), 可以拿来自行修改.
+		\item 尽量提前提交论文, 防止在临近截止时间时出现问题.
+		\item 劳逸结合, 前几天要休息好, 最后一晚可通宵(仔细检查论文和摘要页).
+
+	\end{enumerate}
+\end{frame}
+
+
+\begin{frame}{}
+	\begin{center}
+		\begin{tikzpicture}
+			\node[above,xscale=1.5,yscale=1.4]{\Huge Thank you!};
+			% \node[xscale=1.2,above,yscale=-1.4,scope fading=south,opacity=0.5]{\huge Thank you!};
+		\end{tikzpicture}
+	\end{center}
+\end{frame}
+
+\end{document}
