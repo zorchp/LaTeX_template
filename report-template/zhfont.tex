@@ -1,6 +1,15 @@
 \setmainfont{Times New Roman}%缺省英文字体 Times New Roman
+\ifwindows
 \setCJKmainfont{宋体}%衬线字体 缺省中文字体为
+\else
+\setCJKmainfont{SimSun}
+\fi
+
+\ifwindows
 \setCJKsansfont{黑体}%serif是有衬线字体sans serif无衬线字体。
+\else
+\setCJKmainfont{SimHei}
+\fi
 \setCJKmonofont{仿宋}%中文等宽字体
 %-----------------------xeCJK下设置中文字体------------------------------%
 \setCJKfamilyfont{song}{SimSun}                             %宋体 song
